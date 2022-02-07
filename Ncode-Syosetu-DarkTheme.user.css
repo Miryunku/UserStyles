@@ -1,0 +1,143 @@
+/* ==UserStyle==
+@author         Miryunku
+@namespace      github.com/Miryunku/UserStyles
+@name           ncode.syosetu.com DarkTheme
+@version        1.0.1
+@description    A dark theme for ncode.syosetu.com
+==/UserStyle== */
+
+@-moz-document url-prefix("https://ncode.syosetu.com/")
+{
+    /*
+    Version 1.0.0 finished on 2021-08-06
+    Version 1.0.1 finished on 2021-09-25
+    */
+    body,
+    div.wrap_menu_novelview_after
+    {
+        background-color: Black !important;
+    }
+    
+    a
+    {
+        color: DeepSkyBlue !important;
+    }
+    
+    a:visited
+    {
+        color: Violet !important;
+    }
+    
+    #novel_header,
+    #head_nav
+    {
+        background: #161C20 !important;
+        background-color: #161C20 !important;
+    }
+    
+    li.booklist span,
+    #menu_on
+    {
+        background-color: DarkSlateGray !important;
+        color: DarkSeaGreen !important;
+    }
+    
+    div.box_announce_bookmark.announce_bookmark,
+    div.contents1
+    {
+        background-color: black !important;
+        color: #DDD1A8 !important;
+    }
+    
+    .novel_title
+    {
+        color: Thistle !important;
+    }
+    
+    #novel_ex,
+    dt.long_update
+    {
+        color: Silver !important;
+    }
+    
+    div.novel_writername,
+    div.chapter_title
+    {
+        color: AntiqueWhite !important;
+    }
+    
+    #novel_attention
+    {
+        background-color: #1B2328 !important;
+        color: #DDD1A8 !important;
+        border-color: #222021 !important;
+    }
+    
+    #recommend
+    {
+        background: #1B2328 !important;
+        border-color: #222021 !important;
+    }
+    
+    #recommend h3
+    {
+        color: AntiqueWhite !important;
+    }
+    
+    .recommend_novel
+    {
+        background: Black !important;
+        border-color: #222021 !important;
+    }
+    
+    div.recommend_novel p.recommend_ex
+    {
+        color: Silver !important;
+        }
+    
+    div.recommend_novel ul.reco li
+    {
+        color: #DDD1A8 !important;
+    }
+    
+    div.recommend_novel ul.reco li.genre
+    {
+        color: Lavender !important;
+        background-color: #5C4A4A !important;
+        border-color: #4A3329 !important;
+    }
+    
+    div.recommend_novel ul.reco li.user
+    {
+        color: Lavender !important;
+        background-color: #5C4A4A !important;
+        border-color: #4A3329 !important;
+    }
+    
+    #footer
+    {
+        background: #161C20 !important;
+        border-color: #161C20 !important;
+    }
+    
+    /* Reading chapters */
+    
+    p.novel_subtitle
+    {
+        color: Thistle !important;
+    }
+    
+    #novel_honbun p,
+    #novel_a p
+    {
+        color: Silver !important;
+    }
+    
+    #novel_hyouka,
+    #impression
+    {
+        background: #1B2328 !important;
+        color: #DDD1A8 !important;
+        border-color: #222021 !important;
+    }
+}
