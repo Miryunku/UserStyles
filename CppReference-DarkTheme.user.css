@@ -1,0 +1,314 @@
+/* ==UserStyle==
+@author         Miryunku
+@namespace      github.com/Miryunku/UserStyles
+@name           CppReference-Offline-DarkTheme
+@version        1.0.0
+@description    A dark theme for CppReference offline pages
+==/UserStyle== */
+
+@-moz-document url-prefix("https://en.cppreference.com/")
+{
+    /*
+    Version 1.0.0 finished on 2022/02/06
+    */
+    :root
+    {
+        --main-background-color: black;
+        --second-background-color: #050100;
+        
+        --header-color: #E8B74B;
+        --simple-text-color: silver;
+        
+        --code-area-background: #0B0705;
+    }
+    
+    ::selection
+    {
+        background-color: dimgray !important;
+        color: seashell !important;
+    }
+    
+    #mw-head,
+    #cpp-head-first-base,
+    #cpp-head-second-base,
+    #cpp-head-first,
+    #cpp-head-second,
+    #cpp-head-tools-left,
+    #cpp-head-tools-right
+    {
+        background-color: black !important;
+    }
+    
+    #cpp-content-base
+    {
+        background-color: var(--main-background-color) !important;
+    }
+    
+    .firstHeading,
+    .mw-headline
+    {
+        color: var(--header-color) !important;
+    }
+    
+    /* Defined in header <...> */
+    .t-dsc-header > td:first-child > div
+    {
+        color: khaki !important;
+    }
+    
+    a
+    {
+        /*color: aquamarine !important;*/
+        color: deepskyblue !important;
+    }
+    
+    /* Simple text */
+    p,
+    li,
+    .t-li1
+    {
+        color: var(--simple-text-color) !important;
+    }
+    
+    strong,
+    b
+    {
+        color: whitesmoke !important;
+    }
+    
+    /* Simple text but highlighted? */
+    .t-spar
+    {
+        color: pink !important;
+    }
+    
+    /* TABLE (main navbar) fixes */
+    .t-navbar-head .selflink
+    {
+        color: silver !important;
+    }
+    
+    /* TABLE displayed when hovering in a navbar element */
+    .t-nv-begin
+    {
+        background-color: #0E0C0A !important;
+    }
+    
+    .t-nv-begin .t-nv-h1,
+    .t-nv-begin .t-nv-h2
+    {
+        color: var(--header-color) !important;
+    }
+    
+    .t-nv-begin .selflink .t-lines /* For links that link to the current page */
+    {
+        color: silver !important;
+    }
+    
+    .t-navbar-menu > div /* Fix the surrounding color of the navbar links-table on hover */
+    {
+        background-color:#0E0C0A !important;
+    }
+    
+    /* TABLE (of class mainpagetable) */
+    .mainpagetable > tbody > :is(.row.rowtop, .row, .row.rowbottom) > td
+    {
+        background-color: var(--second-background-color) !important;
+    }
+    
+    /* TABLE (t-dcl-begin) (used for function and class signatures) */
+    /* The numbers that count the different function or class signatures */
+    .t-dcl-rev-aux > td,
+    .t-dcl > td
+    {
+        color: whitesmoke !important;
+    }
+    
+    /* TABLE (t-dsc-begin) (LEFT-SIDE: entity name / RIGHT-SIDE: explanation) */
+    .t-dsc-begin .t-dsc-hitem > td
+    {
+        color: var(--header-color) !important;
+    }
+    
+    .t-dsc-begin > tbody > .t-dsc > td
+    {
+        color: wheat !important;
+    }
+    
+    /* TABLE (t-sdsc-begin) (encountered in the floating-point literal page) */
+    .t-sdsc > td:nth-last-child(2)
+    {
+        color: whitesmoke !important;
+    }
+    
+    /* TABLE (t-par-begin) (used for the parameters of a function) */
+    .t-par > td:first-child
+    {
+        color: pink !important;
+    }
+    
+    .t-par td
+    {
+        color: var(--simple-text-color) !important;
+    }
+    
+    .t-par-req > td /* A line that describes requirements (like EqualityComparable) */
+    {
+        color: var(--simple-text-color) !important;
+    }
+    
+    /* TABLE (wikitable) */
+    .wikitable th
+    {
+        background-color: #28231D !important;
+        color: whitesmoke !important;
+    }
+    
+    .wikitable td
+    {
+        background-color: #050100 !important;
+        color: whitesmoke !important;
+    }
+    
+    .wikitable code
+    {
+        color: whitesmoke !important;
+    }
+    
+    /* TABLE (the defects report table?) */
+    .dsctable th
+    {
+        background-color: #28231D !important;
+        color: whitesmoke !important;
+    }
+    
+    .dsctable td
+    {
+        background-color: #050100 !important;
+        color: whitesmoke !important;
+    }
+    
+    /* The area used for code examples */
+    /* as well as the area for the output of the examples */
+    .mw-geshi
+    {
+        background-color: var(--code-area-background) !important;
+    }
+    
+    /* The area used for inline C and C++ code */
+    .mw-geshi.c.source-c
+    {
+        background-color: var(--code-area-background) !important;
+    }
+    
+    /* Repair the background color for the function signature list */
+    .t-dcl-begin .mw-geshi.c.source-c
+    {
+        background-color: black !important;
+    }
+    
+    /* C/C++ SYNTAX HIGHLIGHTING */
+    
+    /* variables */
+    :is(.de1, .mw-geshi)
+    {
+        color: silver !important;
+    }
+    
+    /* #include <...>, #if, #endif, etc */
+    :is(.de1, .mw-geshi) .co2
+    {
+        color: #BEB7F5 !important;
+    }
+    
+    /* keywords (like if, for, while) */
+    :is(.de1, .mw-geshi) .kw1
+    {
+        color: #D8A0DF !important;
+    }
+    
+    /* keywords (like int, float, double, class, struct, template, typename, enum, const) */
+    :is(.de1, .mw-geshi) .kw2,
+    :is(.de1, .mw-geshi) .kw4
+    {
+        color: skyblue !important;
+    }
+    
+    /* things like <> () [] */
+    :is(.de1, .mw-geshi) .br0 /* angle brackets, parenthesis */
+    {
+        color: #E8B74B !important;
+    }
+    
+    /* operators, like = or ! or + or && */
+    :is(.de1, .mw-geshi) .sy1, /* operator = */
+    :is(.de1, .mw-geshi) .sy2, /* the asterisk * */
+    :is(.de1, .mw-geshi) .sy3, /* operator ! */
+    :is(.de1, .mw-geshi) .sy4 /* the semicolon ; */
+    {
+        color: peachpuff !important;
+    }
+    
+    /* MACROS */
+    :is(.de1, .mw-geshi) .kw493,
+    :is(.de1, .mw-geshi) .kw494,
+    :is(.de1, .mw-geshi) .kw888
+    {
+        color: #9557EA !important;
+    }
+    
+    /* string literals */
+    :is(.de1, .mw-geshi) .st0
+    {
+        color: #3EB322 !important;
+    }
+    
+    :is(.de1, .mw-geshi) .es1 /* escape characters like \n */
+    {
+        color: #8CDB79 !important;
+    }
+    
+    /* number literals */
+    :is(.de1, .mw-geshi) .nu0, /* integer base 10 */
+    :is(.de1, .mw-geshi) .nu6, /* binary form (0b101010) */
+    :is(.de1, .mw-geshi) .nu8, /* integer base 8 */
+    :is(.de1, .mw-geshi) .nu12, /* integer base 16 */
+    :is(.de1, .mw-geshi) .nu16, /* double */
+    :is(.de1, .mw-geshi) .nu17, /* float */
+    :is(.de1, .mw-geshi) .nu19 /* exponential form (1e10, 1.e-2) */
+    {
+        color: darkorange !important;
+    }
+    
+    /* comments */
+    :is(.de1, .mw-geshi) .co1
+    {
+        color: gray !important;
+    }
+    
+    /* struct names */
+    :is(.de1, .mw-geshi) .kw883
+    {
+        color: #D35151 !important;
+    }
+    
+    /* function names */
+    :is(.de1, .mw-geshi) .kw821,
+    :is(.de1, .mw-geshi) .kw826,
+    :is(.de1, .mw-geshi) .kw831,
+    :is(.de1, .mw-geshi) .kw835,
+    :is(.de1, .mw-geshi) .kw834,
+    :is(.de1, .mw-geshi) .kw874,
+    :is(.de1, .mw-geshi) .kw876,
+    :is(.de1, .mw-geshi) .kw877,
+    :is(.de1, .mw-geshi) .kw878,
+    :is(.de1, .mw-geshi) .kw879
+    {
+        color: #C1D13B !important;
+    }
+    
+    #cpp-footer-base
+    {
+        background-color: #161B22 !important;
+    }
+}
